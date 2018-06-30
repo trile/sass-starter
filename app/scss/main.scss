@@ -1,0 +1,35 @@
+// Import Google fonts here if needed
+
+/* If you want to use bootstrap framework please use the following block */
+/*******
+// Import bootstrap and fontawesome core
+@import "vendors/bootstrap/bootstrap.scss";
+@import "vendors/font-awesome/font-awesome.scss";
+
+// Import your own customization
+@import "variables.scss";
+@import "custom.scss";
+********/
+
+/* If you wrire your own scss please use the below structure */
+/*******
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+@import 'base/animation';
+@import 'base/base';
+@import 'base/typography';
+@import 'base/utilities';
+
+@import 'components/button';
+@import 'components/form';
+
+@import 'layout/navigation';
+@import 'layout/header';
+@import 'layout/grid';
+@import 'layout/footer';
+
+@import 'pages/home';
+********/
+
