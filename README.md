@@ -1,5 +1,4 @@
-Sgit remote add origin https://github.com/trile/bootstrap-sass-starter.gituper quick start for development (updated with source from Bootstrap 4.0.0-alpha.6)
-
+Quick start for html and sass development (source from Bootstrap 4.0.0-alpha.6)
 
 ## Quick start
 
@@ -16,10 +15,10 @@ Sgit remote add origin https://github.com/trile/bootstrap-sass-starter.gituper q
 
 
 ## Features
-
 - Include ejs template for reusable components.
 - Watch and Live-reload for convenient development.
 - Easy include or exclude bootstrap sources in your code
+- Include a small sass framework with easy grid to start with
 
 ## Grunt tasks
 
