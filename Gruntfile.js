@@ -1,4 +1,7 @@
-module.exports = function(grunt) {
+module.exports = function (grunt) {
+
+  const sass = require('node-sass');
+
   grunt.initConfig({
     //copy source from Bootstrap folder in node_modules to app
     copy: {
@@ -75,6 +78,7 @@ module.exports = function(grunt) {
     sass: {
       development: {
         options: {
+          implementation: sass,
           sourceMap: true
         },
         files: {
@@ -204,7 +208,7 @@ module.exports = function(grunt) {
         tasks: [
           "sass:development",
           "postcss:development",
-          "csscomb:development",
+          // "csscomb:development",
           "cssmin:development"
         ]
       },
@@ -238,7 +242,7 @@ module.exports = function(grunt) {
   grunt.registerTask("dev-compile", [
     "sass:development",
     "postcss:development",
-    "csscomb:development",
+    // "csscomb:development",
     "cssmin:development",
     "uglify:development"
   ]);
@@ -246,14 +250,14 @@ module.exports = function(grunt) {
     "clean:dist",
     "sass:dist",
     "postcss:dist",
-    "csscomb:dist",
+    // "csscomb:dist",
     "cssmin:dist"
   ]);
   grunt.registerTask("test", [
     "clean:dist",
     "sass:dist",
     "postcss:dist",
-    "csscomb:dist",
+    // "csscomb:dist",
     "cssmin:dist"
   ]);
   grunt.registerTask("server", [
@@ -261,7 +265,7 @@ module.exports = function(grunt) {
     "sass:development",
     "postcss:development",
     "csscomb:development",
-    "cssmin:development",
+    // "cssmin:development",
     "connect:livereload",
     "watch"
   ]);
